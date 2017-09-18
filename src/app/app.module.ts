@@ -8,12 +8,14 @@ import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
 import { GridComponent } from './grid/grid.component';
 import {AngularFireAuthModule} from "angularfire2/auth";
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
     GridComponent,
+    FooterComponent,
   ],
   imports: [
     BrowserModule,
