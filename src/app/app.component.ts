@@ -11,6 +11,8 @@ import { OnInit } from "@angular/core";
 })
 export class AppComponent implements OnInit {
 
+  currentYear = new Date().getFullYear();
+
   @Input()
   skillsList: FirebaseListObservable<any[]>;
 
