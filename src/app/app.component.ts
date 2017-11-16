@@ -1,6 +1,5 @@
 import {Component, Input} from '@angular/core';
-import {AngularFireDatabase, FirebaseListObservable, FirebaseObjectObservable} from 'angularfire2/database';
-import {AngularFireAuth} from "angularfire2/auth";
+
 
 import { OnInit } from "@angular/core";
 
@@ -11,17 +10,15 @@ import { OnInit } from "@angular/core";
 })
 export class AppComponent implements OnInit {
 
-  currentYear = new Date().getFullYear();
-
   @Input()
-  skillsList: FirebaseListObservable<any[]>;
+  skillsList: string[];
 
-  constructor(db: AngularFireDatabase, public afAuth: AngularFireAuth) {
-    this.skillsList = db.list('/skillsList');
+  constructor() {
+
   }
 
   ngOnInit(){
-    this.afAuth.auth.signInAnonymously();
+
   }
 
 

@@ -1,29 +1,25 @@
+@import "../../styles.sass"
+
+.wrapper
+  text-align: center
 .square
-  float: left
+  display: inline-block
+  text-align: center
   position: relative
   width: 10%
-  padding-bottom : 20% /* = width for a 1:1 aspect ratio */
+  padding-top: 10%
+  padding-bottom : 10% /* = width for a 1:1 aspect ratio */
   margin: 1.66%
   background-position: center center
   background-repeat: no-repeat
   background-size: contain /* you change this to "contain" if you don't want the images to be cropped */
+  font-size: 7em
+  color: $text-color
+  @media screen and (max-width: 1005px)
+    display: block
+    width: 100%
 
-.img_1-1
-  background-image: url('../../assets/images/FB-f-Logo__blue_1024.png')
-.img_1-2
-  background-image: url('../../assets/images/Twitter_Logo_Blue.png')
-.img_1-3
-  background-image: url('../../assets/images/Logo-2CRev-75px-R.png')
 
-.img_2-1
-  background-image: url('../../assets/images/so-icon.png')
-.img_2-2
-  background-image: url('../../assets/images/github-10-xxl.png')
-.img_2-3
-  background-image: url("../../assets/images/email-5-xxl.png")
-
-.img_2-4
-  background-image: url("../../assets/images/pdf-file-xxl.png")
 
 
 

@@ -10,7 +10,10 @@ export class HeaderComponent implements OnInit {
   @Input()
   skillsList: string[];
 
-  constructor() { }
+  constructor() {
+    this.skillsList = ['HTML and CSS', 'JavaScript', 'Swift', 'PHP', 'Symfony Framework',
+      'Java', 'C++', 'Unix and Linux', 'Angular 4', 'Git'];
+  }
 
   ngOnInit() {
   }
