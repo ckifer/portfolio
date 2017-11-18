@@ -1,3 +1,4 @@
+@import "../../styles"
 
 .name
   text-align: center
@@ -6,9 +7,14 @@
   text-align: center
   margin: 0
   padding: 0
-  word-wrap: break-word
 
 .skills li
   padding: .2em 1em
   display: inline
+  @media screen and (max-width: 750px)
+    display: inline-block
+    width: 50%
+  @media screen and (max-width: 405px)
+    display: block
+    width: 100%
 
