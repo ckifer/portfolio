@@ -1,5 +1,25 @@
 @import "../../styles"
 
+.navigation
+  list-style: none
+  text-align: center
+
+.navigation li
+  display: inline-block
+  width: 25%
+  @media screen and (max-width: 560px)
+    width: 100%
+
+#aboutMe, #projects
+  top: 0
+  position: relative
+  transition: top ease .5s
+  &:hover
+    top: -5px
+
+.navigation a
+  text-decoration: none
+  color: $text-color
 .name
   text-align: center
 
