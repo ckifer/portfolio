@@ -1,11 +1,12 @@
-import {Component, Input, OnInit} from '@angular/core';
+import {Component, Input, OnInit, AfterViewInit} from '@angular/core';
+import anime from 'animejs';
 
 @Component({
   selector: 'ck-header',
   templateUrl: './header.component.html',
   styleUrls: ['./header.component.sass']
 })
-export class HeaderComponent implements OnInit {
+export class HeaderComponent implements OnInit, AfterViewInit {
 
   @Input()
   skillsList: string[];
@@ -16,6 +17,32 @@ export class HeaderComponent implements OnInit {
   }
 
   ngOnInit() {
+
   }
+
+  ngAfterViewInit(){
+    anime.timeline({loop: false})
+      .add({
+        targets: '.name, .word',
+        scale: [14, 1],
+        opacity: [0,1],
+        easing: "easeOutCirc",
+        duration: 1000,
+        delay: 800
+      }) .add({
+      targets: '#aboutMe',
+      scale: [14, 1],
+      opacity: [0,1],
+      easing: "easeOutCirc",
+      duration: 1000,
+    }) .add({
+      targets: '#projects',
+      scale: [14, 1],
+      opacity: [0,1],
+      easing: "easeOutCirc",
+      duration: 1000,
+    });
+  }
+
 
 }
