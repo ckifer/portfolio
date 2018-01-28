@@ -1,4 +1,4 @@
-import {Component, Input} from '@angular/core';
+import {Component} from '@angular/core';
 
 
 import { OnInit } from "@angular/core";
@@ -9,9 +9,6 @@ import { OnInit } from "@angular/core";
   styleUrls: ['./app.component.sass']
 })
 export class AppComponent implements OnInit {
-
-  @Input()
-  skillsList: string[];
 
   constructor() {
 
