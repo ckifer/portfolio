@@ -6,6 +6,8 @@ import { HeaderComponent } from './header/header.component';
 import { GridComponent } from './grid/grid.component';
 import { FooterComponent } from './footer/footer.component';
 import {AppRoutingModule} from "./app-routing.module";
+import { AboutMeComponent } from './about-me/about-me.component';
+import { ProjectsComponent } from './projects/projects.component';
 
 @NgModule({
   declarations: [
@@ -13,6 +15,8 @@ import {AppRoutingModule} from "./app-routing.module";
     HeaderComponent,
     GridComponent,
     FooterComponent,
+    AboutMeComponent,
+    ProjectsComponent,
   ],
   imports: [
     BrowserModule,

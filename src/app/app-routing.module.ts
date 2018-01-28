@@ -1,14 +1,16 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
+import {AboutMeComponent} from "./about-me/about-me.component";
+import {ProjectsComponent} from "./projects/projects.component";
 
 const routes: Routes = [
   { path : 'projects',
-    redirectTo: '',
+    component: ProjectsComponent,
     pathMatch: 'full'
   },
   {
     path: 'about',
-    redirectTo: '',
+    component: AboutMeComponent,
     pathMatch: 'full'
   }
 ];

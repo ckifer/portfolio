@@ -28,7 +28,7 @@ export class HeaderComponent implements OnInit, AfterViewInit {
         opacity: [0,1],
         easing: "easeOutCirc",
         duration: 1000,
-        delay: 800
+        delay: 1000
       }) .add({
       targets: '#aboutMe',
       scale: [14, 1],
