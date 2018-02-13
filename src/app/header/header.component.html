@@ -19,7 +19,8 @@
   </li>
 </ul>
 <br>
+<div *ngIf="isActive('')">
 <ul class="skills">
   <li *ngFor="let item of skillsList">{{ item }}</li>
 </ul>
-
+</div>

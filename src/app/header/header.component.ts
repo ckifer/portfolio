@@ -1,26 +1,25 @@
 import {Component, Input, OnInit, AfterViewInit} from '@angular/core';
 import anime from 'animejs';
+import {Router} from "@angular/router";
 
 @Component({
   selector: 'ck-header',
   templateUrl: './header.component.html',
   styleUrls: ['./header.component.sass']
 })
-export class HeaderComponent implements OnInit, AfterViewInit {
+export class HeaderComponent implements AfterViewInit {
 
   @Input()
   skillsList: string[];
 
-  constructor() {
+  constructor(private router: Router) {
     this.skillsList = ['HTML and CSS', 'JavaScript', 'Swift', 'PHP', 'Symfony Framework',
       'Java', 'C++', 'Unix and Linux', 'Angular 4', 'Git'];
-  }
-
-  ngOnInit() {
 
   }
 
   ngAfterViewInit(){
+    // animations
     anime.timeline({loop: false})
       .add({
         targets: '.name, .word',
@@ -42,6 +41,11 @@ export class HeaderComponent implements OnInit, AfterViewInit {
       easing: "easeOutCirc",
       duration: 1000,
     });
+  }
+
+  // check if we're on the home page
+  isActive(instruction: string): boolean {
+    return this.router.isActive(instruction, true);
   }
 
 
