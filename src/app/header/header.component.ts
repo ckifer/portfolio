@@ -15,6 +15,20 @@ export class HeaderComponent implements AfterViewInit {
   constructor(private router: Router) {
     this.skillsList = ['HTML and CSS', 'JavaScript', 'Swift', 'PHP', 'Symfony Framework',
       'Java', 'C++', 'Unix and Linux', 'Angular 4', 'Git'];
+    // ngAfterViewInit(){
+    //   // animations
+    //   anime.timeline({loop: false})
+    //     .add({
+    //       targets: '.name, .word',
+    //       scale: [14, 1],
+    //       opacity: [0,1],
+    //       easing: "easeOutCirc",
+    //       duration: 1000,
+    //       delay: 1000
+    //     }) .add({
+    //     targets: '#aboutMe',
+    //     scale: [14, 1],
+    //     opacity: [0,1],
 
   }
 
